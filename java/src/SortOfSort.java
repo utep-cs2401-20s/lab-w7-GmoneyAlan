@@ -1,11 +1,11 @@
 
 public class SortOfSort {
 
-    public static void sortOfSort(int[] unsorted){
+    public void sortOfSort(int[] unsorted){
         sortRecursive(unsorted,0,unsorted.length - 1, 1,0);
     }
 
-    public static int[] sortRecursive(int[] array, int start, int end, int count, int count2){
+    public int[] sortRecursive(int[] array, int start, int end, int count, int count2){
         int temp;
         int maxIndex = findMax(array, end + 1, start, array[start], start);
         if(start == end){
@@ -33,7 +33,7 @@ public class SortOfSort {
         }
     }
 
-    public static int findMax(int[] array, int last, int start, int max, int maxIndex){
+    public int findMax(int[] array, int last, int start, int max, int maxIndex){
         if(start == last )
             return maxIndex;
         if(array[start] > max) {
