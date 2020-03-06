@@ -2,6 +2,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SortOfSortTester {
+//    Testing for the method sortOfSort which is sorted recursively with 3 methods
+//
+//      - sortOfSort()
+//      - sortRecursive
+//      - findMax
+
+
     //Test 1 is to see if the array is working with a simple length 6 array
     @Test
     public void sortOfSort1(){
@@ -11,6 +18,7 @@ public class SortOfSortTester {
         sos.sortOfSort(a);
         assertArrayEquals(m, a);
     }
+    //------------------------------------------------------------------------------------------------------------------
     //This test case is to see if the array will stay sorted the way our lab requires it
     //or if it'll mess up the sortOfSorted
     @Test
@@ -21,7 +29,8 @@ public class SortOfSortTester {
         sos.sortOfSort(alan);
         assertArrayEquals(alan2, alan);
     }
-    //
+    //------------------------------------------------------------------------------------------------------------------
+    //This test case is testing if the method will work with minimal elements which is a array of size 2
     @Test
     public void sortOfSort3(){
         SortOfSort sos = new SortOfSort();
@@ -30,7 +39,8 @@ public class SortOfSortTester {
         sos.sortOfSort(alan);
         assertArrayEquals(alan2, alan);
     }
-
+    //------------------------------------------------------------------------------------------------------------------
+    //This is testing whether if your array having an odd length will impact its sorting
     @Test
     public void sortOfSort4(){
         SortOfSort sos = new SortOfSort();
@@ -39,7 +49,8 @@ public class SortOfSortTester {
         sos.sortOfSort(alan);
         assertArrayEquals(alan2, alan);
     }
-
+    //------------------------------------------------------------------------------------------------------------------
+    //If the method will work with all integers inlcuding negatives
     @Test
     public void sortOfSort5(){
         SortOfSort sos = new SortOfSort();
